@@ -28,9 +28,9 @@ After reading the source code I noticed that it's possible to create a version o
 
 ### Starting the server
 
-  % $YOUR_REDIS_PATH/src/redis-serer
-  % cd instastream-demo
-  % socketstream start
+      % $YOUR_REDIS_PATH/src/redis-serer
+      % cd instastream-demo
+      % socketstream start
 
 
 ## Cakefile
@@ -39,38 +39,38 @@ After reading the source code I noticed that it's possible to create a version o
 
 While the socketstream server is running:
 
-  % cd instastream-demo
-  % cake all
+      % cd instastream-demo
+      % cake all
 
 ### Watch a certain default city
 
 While the socketstream server is running:
 
-  % cd instastream-demo
-  % cake -w 'London' watch
+      % cd instastream-demo
+      % cake -w 'London' watch
 
 ### List default cities
 
-  % cd instastream-demo
-  % cake list
+      % cd instastream-demo
+      % cake list
   
 ### Watch a certain non-default city
 
 While the socketstream server is running:
 
-  % cd instastream-demo
-  % cake -w "Rome" -t "41.9" -o "12.5" watch
+      % cd instastream-demo
+      % cake -w "Rome" -t "41.9" -o "12.5" watch
 
 If you want to add a city with a minus long or minus lat, use a double minus (avoids problems with optparse options parsing)
 
-  % cd instastream-demo
-  % cake -w "Philadelphia" -t "39.95" -o "--75.17"  watch
+      % cd instastream-demo
+      % cake -w "Philadelphia" -t "39.95" -o "--75.17"  watch
 
 ### Clear active subscriptions
 
-  % cd instastream-demo
-  % cake clear
+      % cd instastream-demo
+      % cake clear
 
 ## cUrl
 
-If you don't like the Cakefile you can use cUrl - see the last section of the [blog post](http://blog.carbonfive.com/2011/06/14/instagram-realtime-demo-with-node-js-redis-and-web-sockets/) and the Instagram API [documentation](http://instagram.com/developer/) for information on how to do that
+If you don't like the Cakefile you can use cUrl - see the last section of the [blog post](http://blog.carbonfive.com/2011/06/14/instagram-realtime-demo-with-node-js-redis-and-web-sockets/) and the Instagram API [documentation](http://instagram.com/developer/) for information on how to do that.
