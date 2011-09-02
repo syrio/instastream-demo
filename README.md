@@ -11,6 +11,7 @@ After reading the source code I noticed that it's possible to create a version o
 2. A simple Cakefile that replaces having to use cUrl for working against the Instagram API.
 3. It doesn't use express and instead uses the connect middleware capabilities provided by SocketStream v0.2
 4. It doesn't use environment variables for providing configuration to the server.
+5. It's in CoffeeScript.
 
 ## Installation
 
