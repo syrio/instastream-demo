@@ -15,11 +15,32 @@ After reading the source code I noticed that it's possible to create a version o
 
 ## Installation
 
-1. Install socketstream v0.2 and it's dependencies
-2. Clone instastream-demo
+### Install SocketStream v0.2 and it's dependencies 
+  For more details see the SocketStream [documentation](https://github.com/socketstream/socketstream) and specifically the [INSTALL.MD file](https://github.com/socketstream/socketstream/blob/master/INSTALL.md)
 
+### Clone instastream-demo
 
+      % git clone git@github.com:syrio/instastream-demo.git
+      
+### Install the request module
+
+      % cd instastream-demo
+      % npm install request
+      
+      
+      
 ## Usage
+
+### External Hosting
+
+  The Instagram servers need to be able to contact instastream-demo in order to push pictures taken from the different locations the app (using the Cakefile or cUrl) subscribed to.
+  This is implemented in the form of webhooks and requires instastream-demo to run on a host that is able to accept external incoming HTTP communication from those servers.
+  You can use [localtunnel](http://progrium.com/localtunnel/) to setup this up for you or, if you have an access to one, just place the app on an external host.
+
+### Signing up as an Instagram developer
+
+  In order to interwork with Instagram web services and use the Instagram API, you'll need to register at [http://instagram.com/developer/](http://instagram.com/developer/) to get your developer client id and client secret identifiers.
+  This will be used by the Cakefile (if you choose to use it) for managing location subscritions and by instastream when making requests against Instagram server.
 
 ### Filling your host and your Instagram API client details
 
