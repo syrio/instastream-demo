@@ -50,7 +50,7 @@ After reading the source code I noticed that it's possible to create a version o
 
 ### Starting the server
 
-      % $YOUR_REDIS_PATH/src/redis-serer
+      % $YOUR_REDIS_PATH/src/redis-server
       % cd instastream-demo
       % socketstream start
 
